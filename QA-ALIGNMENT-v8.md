@@ -2,7 +2,7 @@
 
 Course: **TGS-2024045222 — Empowering Employee Health and Wellness at the Workplace**  
 QA date: **16 August 2026**  
-Status: **PASS — ready for controlled publication**
+Status: **PASS — published and read back**
 
 ## Command-equivalent pipeline
 
@@ -13,8 +13,8 @@ Status: **PASS — ready for controlled publication**
 | `/courseware-qa` | PASS — structural checks 27/27 plus fresh-context visual review |
 | `/assessemnt-gen` | PASS — treated as `/assessment-gen`; retrieved legacy v2 papers and approved Assessment Plan, then generated aligned WA/CS and separate keys |
 | `/tms-push-qa` | No installed command of that name; equivalent is current Drive inventory + courseware QA + `lms_push.py --dry-run` + secret-safe before/after readback |
-| `/gdrive-push` | Run only after this report passes; see publication evidence appended to the release handoff |
-| `/tms-push` | Run only after Drive publication and current-link readback; never with a partial payload |
+| `/gdrive-push` | PASS — current files and all 61 activity assets uploaded; stale versions archived; local/remote MD5 readback passed |
+| `/tms-push` | PASS — full read-modify-write returned 200; all seven URLs were read back and fetched successfully |
 
 ## Artifact QA
 
@@ -57,3 +57,11 @@ The bundled `slides_test.py` could not run because its current runtime requires 
 - Excluded from GitHub: `.env`, `.claude`, `reference`, `assessment`, `build`, `qa`, archives and answer keys.
 - Drive/LMS: candidate WA and CS may be linked to learners; answer keys remain trainer-only and must be permission-audited directly after upload.
 
+## Publication evidence
+
+- Drive root: `1B_kisgXjAqzzan4Oq_yAkORYx2EmyuNf`; current files match local MD5 checksums.
+- Activities: 61 local files equal 61 current Drive files by path and MD5.
+- Candidate WA and CS: public and serve DOCX bytes anonymously.
+- Answer keys: moved to `Trainer Only Answer Keys`, a limited-access folder with `inheritedPermissionsDisabled=true`; explicit `anyone` permissions deleted; anonymous requests do not serve DOCX bytes.
+- LMS-TMS: all seven courseware URLs returned live readback checks. A no-op full-payload preservation audit produced identical semantic before/after hashes after excluding only URLs, timestamps and regenerated internal row IDs.
+- GitHub: stale `main` replaced with a public-only root snapshot; remote tree contains 70 release files and no assessment, answer-key, `.env`, reference, build, archive or QA-render paths.
