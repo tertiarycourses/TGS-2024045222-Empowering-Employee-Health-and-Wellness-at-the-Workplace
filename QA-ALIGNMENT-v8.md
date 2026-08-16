@@ -21,7 +21,7 @@ Status: **PASS — published and read back**
 - Slide deck: **141 slides**, 16:9, within the required 100–150 range.
 - Source traceability: **141/141 slides** contain speaker-note `[Sources]` blocks.
 - Procedures: no activity step-by-step sequence appears in the deck; detailed steps are in the LG and activity Markdown.
-- Visual QA: all 141 rendered slides reviewed across eight montages; no clipping, overlap, off-slide objects, unreadable source URLs, broken layouts or incomplete profile fields.
+- Visual QA: all 141 rendered slides reviewed across eight montages; after the cover aspect-ratio correction, slide 1 was re-rendered and independently rechecked. No clipping, overlap, off-slide objects, unreadable source URLs, broken layouts, incomplete profile fields or image distortion remains.
 - Visual variety: generated workplace hero plus system map, Job Demands–Resources balance and programme logic staircase supplement the card/flow layouts.
 - Final sequence: Assessment Reminder → Assessment Flow → Digital Attendance → Thank You.
 - Learner Guide: **35+ pages**, K1–K7, A1–A6, all ten cases, 80 detailed procedure steps, scenario questions, checkpoints, acceptance tests and debriefs.
@@ -60,6 +60,7 @@ The bundled `slides_test.py` could not run because its current runtime requires 
 ## Publication evidence
 
 - Drive root: `1B_kisgXjAqzzan4Oq_yAkORYx2EmyuNf`; current files match local MD5 checksums.
+- Scoped cover correction: the 16:9 hero is now placed at its native aspect ratio instead of being stretched into a portrait frame. Drive IDs and LMS links were preserved; PPTX MD5 is `e7e825d493cf3f278aff309faae447e1` and both current slide PDFs have MD5 `c177279f64e75be3d1ccc8430d32f5eb`.
 - Activities: 61 local files equal 61 current Drive files by path and MD5.
 - Candidate WA and CS: public and serve DOCX bytes anonymously.
 - Answer keys: moved to `Trainer Only Answer Keys`, a limited-access folder with `inheritedPermissionsDisabled=true`; explicit `anyone` permissions deleted; anonymous requests do not serve DOCX bytes.
