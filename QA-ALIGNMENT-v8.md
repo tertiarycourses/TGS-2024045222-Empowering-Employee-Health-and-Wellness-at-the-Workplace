@@ -66,4 +66,4 @@ The bundled `slides_test.py` could not run because its current runtime requires 
 - Candidate WA and CS: public and serve DOCX bytes anonymously.
 - Answer keys: moved to `Trainer Only Answer Keys`, a limited-access folder with `inheritedPermissionsDisabled=true`; explicit `anyone` permissions deleted; anonymous requests do not serve DOCX bytes.
 - LMS-TMS: all seven courseware URLs returned live readback checks; the unchanged Activities folder now resolves as 102 files. The current production write restored the learner-facing Case Study mapping, withheld both answer keys, and passed the secure before/after snapshot verifier with unrelated course fields preserved.
-- GitHub: stale `main` replaced with a public-only root snapshot; remote tree contains 70 release files and no assessment, answer-key, `.env`, reference, build, archive or QA-render paths.
+- GitHub: `main` contains 112 public release files, including all 41 Markdown/PDF counterpart pairs, and no assessment, answer-key, `.env`, reference, build, archive or QA-render paths.
