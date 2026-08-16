@@ -4,6 +4,8 @@ Course: TGS-2024045222
 
 Ten self-contained real-use-case activities apply workplace health and wellness evidence. Published sources are separated from fictional training assumptions.
 
+Every Markdown resource in this activity tree has a same-folder, same-basename PDF for convenient viewing, printing and facilitation. Use Markdown when editing the source and PDF when distributing or completing the activity offline.
+
 - [Activity 1: Privacy-Safe Wearable Wellness Pilot](activity-01-privacy-safe-wearable-wellness-pilot/README.md) — K1 · K3 · A1 · A2 · LO1
 - [Activity 2: Segmented Workforce Wellbeing Needs Assessment](activity-02-segmented-workforce-wellbeing-needs-assessment/README.md) — K2 · A3 · LO2
 - [Activity 3: Evidence and Technology Selection Board](activity-03-evidence-and-technology-selection-board/README.md) — K3 · A1 · A2 · LO1

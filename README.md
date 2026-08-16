@@ -5,7 +5,7 @@ WSQ courseware for **TGS-2024045222** and **HRS-HRM-3019-1.1 — Health and Well
 - 2 days / 16 hours, including a 1-hour Written Assessment and 1-hour Case Study
 - 141 highly visual, concept-led slides with source blocks in speaker notes
 - Detailed Learner Guide and slide-mapped Lesson Plan in DOCX and PDF
-- Ten individual real-use-case activity folders with scenarios, questions, detailed procedures, evidence checklists, mock data and PDF briefs
+- Ten individual real-use-case activity folders with scenarios, questions, detailed procedures, evidence checklists, mock data, PDF briefs and same-basename PDF copies of every Markdown resource
 - Candidate assessments aligned to K1–K7 and A1–A6; answer keys are maintained separately as trainer-confidential materials
 
 ## Courseware

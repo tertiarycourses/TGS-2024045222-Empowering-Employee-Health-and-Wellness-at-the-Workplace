@@ -13,7 +13,7 @@ Status: **PASS — published and read back**
 | `/courseware-qa` | PASS — structural checks 27/27 plus fresh-context visual review |
 | `/assessemnt-gen` | PASS — treated as `/assessment-gen`; retrieved legacy v2 papers and approved Assessment Plan, then generated aligned WA/CS and separate keys |
 | `/tms-push-qa` | No installed command of that name; equivalent is current Drive inventory + courseware QA + `lms_push.py --dry-run` + secret-safe before/after readback |
-| `/gdrive-push` | PASS — current files and all 61 activity assets uploaded; stale versions archived; local/remote MD5 readback passed |
+| `/gdrive-push` | PASS — current files and all 102 activity assets uploaded; stale versions archived; local/remote MD5 readback passed |
 | `/tms-push` | PASS — full read-modify-write returned 200; all seven URLs were read back and fetched successfully |
 
 ## Artifact QA
@@ -26,7 +26,8 @@ Status: **PASS — published and read back**
 - Final sequence: Assessment Reminder → Assessment Flow → Digital Attendance → Thank You.
 - Learner Guide: **35+ pages**, K1–K7, A1–A6, all ten cases, 80 detailed procedure steps, scenario questions, checkpoints, acceptance tests and debriefs.
 - Lesson Plan: 2 days / 16 hours; Day 2 final assessment is WA 4:00–5:00pm followed by CS 5:00–6:00pm; references use the generated slide map.
-- Activities: **10 individual folders**, each with README, submission template, evidence checklist, facilitator questions, mock-data CSV and scenario PDF.
+- Activities: **10 individual folders**, each with README, submission template, evidence checklist, facilitator questions, mock-data CSV and scenario PDF. All **41 Markdown files** have polished same-folder, same-basename PDFs, producing **51 activity PDFs** and **102 activity assets** in total.
+- Activity-PDF QA: **41/41 Markdown-to-PDF pairs** exist and are current; all 81 generated pages open successfully. First-page contact-sheet review plus full multi-page checks of detailed guides and submission templates found no clipping, overflow, broken glyphs or unusable writing areas.
 - Folder naming: canonical learner-facing folder is `activities/`; no `labs/` directory exists.
 - Candidate papers: WA has **7 K1–K7 questions**; CS has **3 A1–A6 integrated questions**; each rendered to exactly **3 pages**, matching the retrieved legacy structure.
 - Answer keys: separate DOCX files, visually reviewed and marked **TRAINER / ASSESSOR CONFIDENTIAL**.
@@ -61,7 +62,7 @@ The bundled `slides_test.py` could not run because its current runtime requires 
 
 - Drive root: `1B_kisgXjAqzzan4Oq_yAkORYx2EmyuNf`; current files match local MD5 checksums.
 - Scoped cover correction: the 16:9 hero is now placed at its native aspect ratio instead of being stretched into a portrait frame. Drive IDs and LMS links were preserved; PPTX MD5 is `e7e825d493cf3f278aff309faae447e1` and both current slide PDFs have MD5 `c177279f64e75be3d1ccc8430d32f5eb`.
-- Activities: 61 local files equal 61 current Drive files by path and MD5.
+- Activities: 102 local files equal 102 current Drive files by path and MD5, including all 41 Markdown/PDF counterpart pairs.
 - Candidate WA and CS: public and serve DOCX bytes anonymously.
 - Answer keys: moved to `Trainer Only Answer Keys`, a limited-access folder with `inheritedPermissionsDisabled=true`; explicit `anyone` permissions deleted; anonymous requests do not serve DOCX bytes.
 - LMS-TMS: all seven courseware URLs returned live readback checks. A no-op full-payload preservation audit produced identical semantic before/after hashes after excluding only URLs, timestamps and regenerated internal row IDs.

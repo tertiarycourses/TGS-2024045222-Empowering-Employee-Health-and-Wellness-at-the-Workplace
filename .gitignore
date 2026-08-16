@@ -1,0 +1,13 @@
+.env
+.claude/
+reference/
+build/
+qa/
+tmp/
+archive/
+assessment/
+courseware/assets/
+courseware/slide_map.json
+*.pyc
+__pycache__/
+
